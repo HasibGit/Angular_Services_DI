@@ -1,0 +1,8 @@
+<h1>Inactive Users</h1>
+
+<div class="container" *ngFor="let user of inactiveUsers; idx as index">
+    <div>
+        <p class="mat-h3"> <span style="margin-right: 15px">{{user}}</span><button mat-raised-button (click)="setAsActive(user, idx)">Set to
+                active</button></p>
+    </div>
+</div>

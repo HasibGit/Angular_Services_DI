@@ -3,14 +3,25 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule } from '@angular/material/button';
+import { ActiveComponent } from './active/active.component';
+import { InactiveComponent } from './inactive/inactive.component';
+import {MatListModule} from '@angular/material/list';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ActiveComponent,
+    InactiveComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
